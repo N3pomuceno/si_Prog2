@@ -1,0 +1,20 @@
+Noção de ponteiro para registro.
+
+Vetor está sempre ligad na memória de forma continua, enquanto lista ligada não necessariamente tem isso.
+A lista ligada pode ter quantos elementos ela quiser. Com vetor pode ter despedício de espaço, mas para a lista isso não acontece.
+
+
+Quando falando de lista ligada, o professor se solta do assunto e começa a falar que a melhor forma de lidar com ponteiros é usando unique pointer, mais informações:
+https://www.cplusplus.com/reference/memory/unique_ptr/?kw=unique_ptr ou https://thispointer.com/c11-unique_ptr-tutorial-and-examples/
+
+
+
+Em C++, temos já tudo mais bem definido:
+std::array - vetor, que tem acesso direto, mas não é redimensionavel
+std:: list - lista, que é redimensionavel, mas não tem acesso direto
+std::vector - array redimensionavel, que tem acesso direto
+
+
+Lista ligada pode ser duplamente encadeada, que tem a variável (ponteiro que mostra o endereço) de proximo e de anterior.
+Listas Duplamente encadeadas podem ser circulares, trazendo o endereço do final da lista para o começo da lista.
+(Viagem, é possível fazer lista do forma de duas listas se cruzando, ao invés de prox e ant, poderia ser norte sul, leste oeste, e fazercom que os valores se cruzassem.)

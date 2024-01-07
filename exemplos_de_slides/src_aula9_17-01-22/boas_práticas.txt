@@ -1,0 +1,30 @@
+Professor fala sobre bibliotecas que começam do zero ao invés de usar bibliotecas já preparadas como sdtio.h
+
+Biblioteca de formatação padrão, format FMT 
+
+ele tbm fala da biblioteca de matemática math.h
+e falou como baixar outras biliotecas que a forma mais comum seria baixando e colocar o arquivo na pasta do projeto.
+
+Outra biblioteca que é citada no slide é a biblioteca de tempo, que no slide é o time.h, mas ele já corta falando que não é bom, foda-se ela.
+Ele dá uma alternativa de biblioteca que se chama chrono.
+std:: chrono que pode ser usada em windows, linux, mac e é padrão.
+link que pode facilitar: https://www.cplusplus.com/reference/chrono/
+
+Para a biblioteca de valores randomicos podemos utilizar o rand, só que o professor tbm não recomenda utilizar.
+A melhor maneira de trabalhar com biblioteca para gerar número padrão:
+#include<random>
+std::mt19937 r;
+r.rand() % 10; O resto pelo (intervalo que vc quer mais um).
+
+Biblioteca limits.h, que define constantes que mostram o limit dos tipos inteiros para o sistema especificado e as implementações do compilador usado.
+O mesmo é feito para o float.h, essa biblioteca faz o mesmo só que para ponto-flutuante. Mais informações em: https://www.cplusplus.com/reference/climits/
+Embora, essas biblioteca não são tão seguras pq aparentemente são feitas com macro, o melhor seria utilizar a seguinte biblioteca:
+https://www.cplusplus.com/reference/limits/numeric_limits/?kw=numeric_limits, que mostra tanto para inteiros quanto para ponto-flutuante. (Para C++)
+
+Geralmente em exemplos online de C++, a biblioteca padrão de entrada e saída é a iostream, para maior detalhes:
+https://www.cplusplus.com/reference/iolibrary/ Que já começa a sair mais para orientação a objeto. Mas também podemos utilizar a famosa 
+stdio.h: https://www.cplusplus.com/reference/cstdio/
+
+
+Outra biblioteca que não utilizamos tanto mais que pode ser utilizada no futuro é a string.h, que define rotnas que manipulam strings, que são vetores de char.
+https://www.cplusplus.com/reference/cstring/?kw=string.h 
